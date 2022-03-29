@@ -11,7 +11,7 @@ window.onscroll = function () {
 	prevScrollpos = currentScrollPos;
 }
 
-// Попап
+// Попап спасибо
 p = $('.popup__overlay')
 $('.popup__toggle').click(function () {
 	p.addClass('_active')
@@ -26,7 +26,7 @@ $('.popup__close').click(function () {
 	p.removeClass('_active')
 })
 
-// Попап
+// Попап с формой
 p1 = $('.popup__overlay1')
 $('.popup__toggle1').click(function () {
 	p1.addClass('_active')
@@ -39,6 +39,66 @@ p1.click(function (event) {
 })
 $('.popup__close').click(function () {
 	p1.removeClass('_active')
+})
+
+// Попап с видео 1
+p2 = $('.popup__overlay2')
+$('.popup__toggle2').click(function () {
+	p2.addClass('_active')
+})
+p2.click(function (event) {
+	e = event || window.event
+	if (e.target == this) {
+		$(p2).removeClass('_active')
+	}
+})
+$('.popup__close').click(function () {
+	p2.removeClass('_active')
+})
+
+// Попап с видео 2
+p3 = $('.popup__overlay3')
+$('.popup__toggle3').click(function () {
+	p3.addClass('_active')
+})
+p3.click(function (event) {
+	e = event || window.event
+	if (e.target == this) {
+		$(p3).removeClass('_active')
+	}
+})
+$('.popup__close').click(function () {
+	p3.removeClass('_active')
+})
+
+// Попап с видео 3
+p4 = $('.popup__overlay4')
+$('.popup__toggle4').click(function () {
+	p4.addClass('_active')
+})
+p4.click(function (event) {
+	e = event || window.event
+	if (e.target == this) {
+		$(p4).removeClass('_active')
+	}
+})
+$('.popup__close').click(function () {
+	p4.removeClass('_active')
+})
+
+// Попап с видео 3
+p5 = $('.popup__overlay5')
+$('.popup__toggle5').click(function () {
+	p5.addClass('_active')
+})
+p5.click(function (event) {
+	e = event || window.event
+	if (e.target == this) {
+		$(p5).removeClass('_active')
+	}
+})
+$('.popup__close').click(function () {
+	p5.removeClass('_active')
 })
 
 
@@ -195,3 +255,11 @@ for (l = 0; l < qiuzButtons.length; l++) {
 		}
 	});
 }
+
+
+// стилизация select
+(function ($) {
+	$(function () {
+		$('select').styler();
+	});
+})(jQuery);

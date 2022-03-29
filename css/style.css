@@ -1254,7 +1254,11 @@ footer {
 
 
 .popup__overlay,
-.popup__overlay1 {
+.popup__overlay1,
+.popup__overlay2,
+.popup__overlay3,
+.popup__overlay4,
+.popup__overlay5 {
 	position: fixed;
 	z-index: 11;
 	left: 0;
@@ -1269,12 +1273,20 @@ footer {
 	transition: 0.5s;
 }
 .popup__overlay._active,
-.popup__overlay1._active {
+.popup__overlay1._active,
+.popup__overlay2._active,
+.popup__overlay3._active,
+.popup__overlay4._active,
+.popup__overlay5._active {
 	opacity: 1;
 	visibility: visible;
 }
 .popup__overlay:after,
-.popup__overlay1:after {
+.popup__overlay1:after,
+.popup__overlay2:after,
+.popup__overlay3:after,
+.popup__overlay4:after,
+.popup__overlay5:after {
 	display: inline-block;
 	 *display: inline;
 	 *zoom: 1;
@@ -1374,8 +1386,8 @@ footer {
 	bottom: -20px;
 	right: 0;
 }
-/* попап с формой */
 
+/* попап с формой */
 .popup__overlay1 .popup {
 	display: inline-block;
 	*display: inline;
@@ -1465,6 +1477,50 @@ footer {
 	padding: 75px 35px;
 	max-width: 443px;
 	width: 100%;
+}
+
+/* попап с видео */
+.popup__overlay2 .popup,
+.popup__overlay3 .popup,
+.popup__overlay4 .popup,
+.popup__overlay5 .popup {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	position: relative;
+	max-width: 854px;
+	margin: 15px;
+	background: #fff;
+	vertical-align: middle;
+	
+
+	transform: translateY(500px) scale(0);
+	transition: 0.3s;
+}
+.popup__overlay2._active .popup,
+.popup__overlay3._active .popup,
+.popup__overlay4._active .popup,
+.popup__overlay5._active .popup {
+	transform: translateY(0) scale(1);
+}
+.popup__overlay2 .popup__close,
+.popup__overlay3 .popup__close,
+.popup__overlay4 .popup__close,
+.popup__overlay5 .popup__close {
+	display: block;
+	position: absolute;
+	top: -50px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+.popup__overlay2 .popup-body,
+.popup__overlay3 .popup-body,
+.popup__overlay4 .popup-body,
+.popup__overlay5 .popup-body {
+	display: flex;
+	width: 560px;
 }
 
 
@@ -1853,6 +1909,12 @@ footer {
 	}
 	.pokupka__item-text p {
 		font-size: 18px;
+	}
+	.popup__overlay2 .popup-body,
+	.popup__overlay3 .popup-body,
+	.popup__overlay4 .popup-body,
+	.popup__overlay5 .popup-body {
+		width: 80vw;
 	}
 }
 @media screen and (max-width: 540px) {
