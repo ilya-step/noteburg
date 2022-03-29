@@ -1506,6 +1506,9 @@ footer {
 		padding-right: 100px;
 		height: 60px;
 	}
+	.opening {
+		margin-top: 60px;
+	}
 	.nav-logo img {
 		max-width: 110px;
 	}
