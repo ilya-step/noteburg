@@ -26,6 +26,22 @@ $('.popup__close').click(function () {
 	p.removeClass('_active')
 })
 
+// Попап
+p1 = $('.popup__overlay1')
+$('.popup__toggle1').click(function () {
+	p1.addClass('_active')
+})
+p1.click(function (event) {
+	e = event || window.event
+	if (e.target == this) {
+		$(p1).removeClass('_active')
+	}
+})
+$('.popup__close').click(function () {
+	p1.removeClass('_active')
+})
+
+
 // маска на телефон
 let selector = document.querySelectorAll('input[type="tel"]');
 let im = new Inputmask('+7 (999) 999-99-99');
