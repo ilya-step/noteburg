@@ -182,7 +182,6 @@ font: inherit;
 	font-size: 14px;
 	line-height: 14px;
 }
-
 .soc1 {
 	animation: soc1 1.5s infinite ease-in-out;
 }
@@ -211,10 +210,6 @@ font: inherit;
 	83% {  transform: translateY(-5px); }
 	100% { transform: translateY(0px); }
 }
-
-
-
-
 .opening {
 	background-image: url(../assets/opening-bg.png);
 	background-size: cover;
@@ -260,8 +255,6 @@ font: inherit;
 	bottom: -5px;
 	opacity: 1;
 }
-
-
 .opening__title {
 	padding-top: 80px;
 	color: #fff;
@@ -272,8 +265,6 @@ font: inherit;
 .opening-content {
 	display: flex;
 }
-
-
 .quiz__body {
 	padding: 50px 40px 120px;
 	width: 655px;
@@ -312,7 +303,6 @@ font: inherit;
 	line-height: 120%;
 	margin-bottom: 30px;
 }
-
 .answers1,
 .answers3,
 .answers4 {
@@ -329,7 +319,6 @@ font: inherit;
 .answers4 input {
 	display: none;
 }
-
 .answers2 {
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -368,9 +357,6 @@ font: inherit;
 .tel-quiz::placeholder {
 	color: #000;
 }
-
-
-
 .quiz-buttons {
 	display: flex;
 	justify-content: space-between;
@@ -443,7 +429,6 @@ font: inherit;
 	cursor: pointer;
 	transition: .3s;
 }
-
 .answers1,
 .answers2,
 .answers3,
@@ -451,14 +436,9 @@ font: inherit;
 .quiz-buttons {
 	display: none;
 }
-
-
 .show {
 	display: flex;
 }
-
-
-
 .quiz-section {
 	padding-top: 65px;
 	margin-bottom: 45px;
@@ -467,7 +447,6 @@ font: inherit;
 	position: relative;
 	bottom: -45px;
 }
-
 .quiz__title {
 	font-weight: 700;
 	padding: 20px 15px 20px 35px;
@@ -484,16 +463,11 @@ font: inherit;
 .quiz__title span {
 	color: #C42120;
 }
-
-
-
 .opening-content__notebook img {
 	position: relative;
 	left: 50px;
 	bottom: 50px;
 }
-
-
 .tabs {
 	text-align: center;
 	position: relative;
@@ -531,7 +505,6 @@ font: inherit;
 #tab-btn-2:checked~#content-2 {
 	display: flex;
 }
-
 .answers1 label,
 .answers2 label,
 .answers3 label,
@@ -559,7 +532,6 @@ font: inherit;
 	border-radius: 5px;
 	border: 1px solid #000;
 	transition: 0.3s;
-
 }
 .answers1 label:after,
 .answers2 label:after,
@@ -589,8 +561,6 @@ border: 1px solid #C42120;
 .answers4 input:checked+label:after {
 	transform: rotate(45deg) scale(1.3);
 }
-
-
 #pokupka {
 	padding-top: 105px;
 }
@@ -653,7 +623,6 @@ border: 1px solid #C42120;
 	border: 1px solid #C42120;
 	width: max-content;
 }
-
 #garant {
 	padding-top: 90px;
 }
@@ -692,7 +661,6 @@ border: 1px solid #C42120;
 	right: 0;
 	top: 80px;
 }
-
 .garant-right {
 	width: 50%;
 	position: relative;
@@ -749,8 +717,6 @@ border: 1px solid #C42120;
 	cursor: pointer;
 	transition: .3s;
 }
-
-
 #steps {
 	min-height: 500px;
 }
@@ -894,8 +860,6 @@ border: 1px solid #C42120;
 	bottom: -80px;
 	right: -80px;
 }
-
-
 #review {
 	padding: 55px 0px 90px;
 	background-color: #F6F6F6;
@@ -936,9 +900,6 @@ border: 1px solid #C42120;
 .owl-next {
 	right: -40px;
 }
-
-
-
 #faq {
 	padding-top: 90px;
 	margin-bottom: 90px;
@@ -1038,8 +999,6 @@ border: 1px solid #C42120;
 	bottom: 25px;
 	right: 0;
 }
-
-
 #map {
 	background-color: #F6F6F6;
 	padding-top: 50px;
@@ -1097,7 +1056,6 @@ border: 1px solid #C42120;
 .contacts__photos2 {
 	background-image: url(../assets/contacnts2.png);
 }
-
 footer {
 	background-color: #643DD1;
 	padding: 45px 0 60px;
@@ -1253,10 +1211,7 @@ footer {
 	  left: 110%;
 	  margin-left: 80px;
 	}
-  }
-
-
-
+}
 .popup__overlay,
 .popup__overlay1,
 .popup__overlay2,
@@ -1401,8 +1356,6 @@ footer {
 	margin: 15px;
 	background: #fff;
 	vertical-align: middle;
-	
-
 	transform: translateY(500px) scale(0);
 	transition: 0.3s;
 }
@@ -1495,8 +1448,7 @@ footer {
 	max-width: 854px;
 	margin: 15px;
 	background: #fff;
-	vertical-align: middle;
-	
+	vertical-align: middle;	
 
 	transform: translateY(500px) scale(0);
 	transition: 0.3s;
@@ -1527,12 +1479,8 @@ footer {
 	width: 560px;
 }
 
-
 .burger-menu,
 .menubox {display: none;}
-
-
-
 @media screen and (max-width: 1370px) {
 	.coupon {
 		margin: 80px 15px 100px 15px;
@@ -1558,7 +1506,6 @@ footer {
 		bottom: 0px;
 		width: calc(100vw * 0.45);
 	}
-
 }
 @media screen and (max-width: 1100px) {
 	.faq {
@@ -1786,7 +1733,6 @@ footer {
 	.opening__title {
 		padding-top: 30px;
 	}
-
 }
 @media screen and (max-width: 800px) {
 	.step {
@@ -1924,7 +1870,6 @@ footer {
 		background: none;
 		background-color: #6b50d5;
 	}
-
 }
 @media screen and (max-width: 540px) {
 	.quiz-buttons {
@@ -2043,5 +1988,4 @@ footer {
 	.step img {
 		margin-bottom: 15px;
 	}
-
 }

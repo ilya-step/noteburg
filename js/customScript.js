@@ -196,26 +196,17 @@ for (l = 0; l < qiuzButtons.length; l++) {
 				quizCounter--;
 				answers2.classList.remove("show");
 				answers1.classList.add("show");
-				questCounter.innerHTML = "Вопрос 1 из 4";
+				questCounter.innerHTML = "Вопрос 1 из 3";
 				question.innerHTML = "Выберите категорию:";
 				progressLine.style.width = "25%";
 				return;
 			};
 			if (quizCounter == 3) {
 				quizCounter--;
-				answers3.classList.remove("show");
-				answers2.classList.add("show");
-				questCounter.innerHTML = "Вопрос 2 из 4";
-				question.innerHTML = "Что вы хотите?";
-				progressLine.style.width = "50%";
-				return;
-			};
-			if (quizCounter == 4) {
-				quizCounter--;
 				answers4.classList.remove("show");
-				answers3.classList.add("show");
-				questCounter.innerHTML = "Вопрос 3 из 4";
-				question.innerHTML = "Как вам удобнее?";
+				answers2.classList.add("show");
+				questCounter.innerHTML = "Вопрос 2 из 3";
+				question.innerHTML = "Что вы хотите?";
 				progressLine.style.width = "75%";
 				document.querySelector("#quiz-btn-next").style.display = "block";
 				document.querySelector(".submitForm").style.display = "none";
@@ -227,25 +218,16 @@ for (l = 0; l < qiuzButtons.length; l++) {
 				quizCounter++;
 				answers1.classList.remove("show");
 				answers2.classList.add("show");
-				questCounter.innerHTML = "Вопрос 2 из 4";
+				questCounter.innerHTML = "Вопрос 2 из 3";
 				question.innerHTML = "Что вы хотите?";
-				progressLine.style.width = "50%";
+				progressLine.style.width = "75%";
 				return;
 			};
 			if (quizCounter == 2) {
 				quizCounter++;
 				answers2.classList.remove("show");
-				answers3.classList.add("show");
-				questCounter.innerHTML = "Вопрос 3 из 4";
-				question.innerHTML = "Как вам удобнее?";
-				progressLine.style.width = "75%";
-				return;
-			};
-			if (quizCounter == 3) {
-				quizCounter++;
-				answers3.classList.remove("show");
 				answers4.classList.add("show");
-				questCounter.innerHTML = "Вопрос 4 из 4";
+				questCounter.innerHTML = "Вопрос 3 из 3";
 				question.innerHTML = "Оставьте Ваш телефон";
 				progressLine.style.width = "95%";
 				document.querySelector("#quiz-btn-next").style.display = "none";
